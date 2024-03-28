@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أرجع غدوة</title>
+    <link rel="icon" type="image/x-icon" href="/images/peas.png">
+    <link  type="text/css" rel="Style" href="/css/close.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');      
+    body{ 
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background: #131313;
+        color: #fff;
+        font-size: 50px;
+        font-family: 'Fira Mono', monospace;
+        letter-spacing: 0px;
+      }
+      h2{
+        font-size: 80px;
+        margin: 0%;
+        padding: 0;
+      }
+      h1{
+        font-size: 200px;
+        font-weight: bold;
+        margin: 0%;
+       }
+
+      div{
+        animation: glitch 1s linear infinite;
+      }
+      
+      @keyframes glitch{
+        2%,64%{
+          transform: translate(2px,0) skew(0deg);
+        }
+        4%,60%{
+          transform: translate(-2px,0) skew(0deg);
+        }
+        62%{
+          transform: translate(0,0) skew(5deg); 
+        }
+      }
+      
+      div h1 :before,
+      div h1 :after{
+        content: attr(' أرجع غدوة');
+        position: absolute;
+        left: 0;
+      }
+      div h4 :before,div h4 :after{
+        content: attr('The website is open Monday through Friday from 9am to 5pm');
+        position: absolute;
+        left: 0;
+      }
+      
+      div:before{
+        animation: glitchTop 1s linear infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+      }
+      
+      @keyframes glitchTop{
+        2%,64%{
+          transform: translate(2px,-2px);
+        }
+        4%,60%{
+          transform: translate(-2px,2px);
+        }
+        62%{
+          transform: translate(13px,-1px) skew(-13deg); 
+        }
+      }
+      
+      div:after{
+        animation: glitchBotom 1.5s linear infinite;
+        clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+      }
+      
+      @keyframes glitchBotom{
+        2%,64%{
+          transform: translate(-2px,0);
+        }
+        4%,60%{
+          transform: translate(-2px,0);
+        }
+        62%{
+          transform: translate(-22px,5px) skew(21deg); 
+        }
+      }
+      </style>
+      
+    <title>close</title>
+</head>
+<body>
+
+  <center>
+
+    <div class="title">
+    <h1> 404 </h1>
+    <h2> أرجع غدوة </h2>
+     </div>  
+     <h4>The website is open Monday through Friday 
+        <br> from 9am to 5pm</h4> 
+  </center>
+
+</body>
+</html>

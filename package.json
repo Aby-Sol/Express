@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "ajax": "^0.0.4",
+    "bootstrap": "^5.1.3",
+    "connect-livereload": "^0.6.1",
+    "ejs": "^3.1.6",
+    "express": "^4.19.1",
+    "gsap": "^3.12.5",
+    "gsap-trial": "^3.12.5",
+    "livereload": "^0.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "start": "nodemon App.js",
+    "watch": "nodemon --ext js,ejs --ignore public"
+  }
+}
